@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <section>
+        <div class="signup-header">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </div>
+        <div class="signup-form">
+          <form action="#" method="post" novalidate>
+            <div>
+              <input
+                type="text"
+                id="fname"
+                class="signup-form-item"
+                name="fname"
+                placeholder="First Name"
+                autocomplete="off"
+                required
+              />
+              <span id="fNameError" class="errorText"></span>
+            </div>
+            <div>
+              <input
+                type="text"
+                id="lname"
+                class="signup-form-item"
+                name="lname"
+                placeholder="Last Name"
+                autocomplete="off"
+                required
+              />
+              <span id="lNameError" class="errorText"></span>
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                class="signup-form-item"
+                name="email"
+                placeholder="Email Address"
+                autocomplete="off"
+                required
+              />
+              <span id="emailError" class="errorText"></span>
+            </div>
+            <div>
+              <input
+                type="password"
+                id="pass"
+                class="signup-form-item"
+                name="pass"
+                placeholder="Password"
+                autocomplete="off"
+                required
+              />
+              <span id="passError" class="errorText"></span>
+            </div>
+            <input
+              type="submit"
+              class="signup-form-item signup-button"
+              value="Claim your free trial"
+            />
+          </form>
+          <p class="signup-button-terms">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
